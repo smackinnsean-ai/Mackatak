@@ -20,7 +20,7 @@ if (reducedPageMotion || !('IntersectionObserver' in window)) {
 }
 
 const serviceHeadlineWord = document.querySelector('.service-headline-word');
-const serviceRows = [...document.querySelectorAll('.service')];
+const serviceRows = [...document.querySelectorAll('.service[data-feature-target]')];
 
 if (serviceHeadlineWord && serviceRows.length) {
   const defaultServiceHeadline = serviceHeadlineWord.textContent;
