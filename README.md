@@ -1,20 +1,32 @@
 # Mackatak Website Proposal
 
-This repository contains a standalone, self-contained review build of the Mackatak website proposal.
+A standalone review build for the Mackatak Fitness and Communications website proposal. It uses static HTML, CSS, JavaScript, and local images, with no installation or build step.
 
-## View the site locally
+## View the site
 
-1. On the GitHub repository page, choose **Code → Download ZIP**.
-2. Unzip the downloaded folder.
-3. Double-click `index.html` to open the site in a web browser.
+Open `index.html` directly in a browser, or serve the directory locally:
 
-No installation, account, internet connection, package manager, or local server is required.
+```bash
+python3 -m http.server 8000 --bind 127.0.0.1
+```
 
-## Main files
+Then open <http://127.0.0.1:8000/>.
 
-- `index.html` — page content and structure
-- `styles.css` — layout and visual styling
-- `carousel.js` — service and testimonial interactions
-- `assets/` — local website images
+To review from another machine on a trusted local network, bind the temporary server to all interfaces:
 
-The service image panels marked as placeholders are intentional and can be replaced when final photography is available.
+```bash
+python3 -m http.server 8000 --bind 0.0.0.0
+```
+
+Open `http://<server-ip>:8000/` from the other machine. Stop the temporary server when the review is complete.
+
+## Pages
+
+- `index.html`: landing page and service navigation
+- `coaching.html`: coaching overview and client testimonial
+- `photography.html`: photography overview and portfolio carousel
+- `announcing.html`: announcing services, experience, and client testimonial
+- `journalism.html`: journalism overview
+- `communications.html`: communications overview
+
+Shared styling is in `styles.css` and `service-pages.css`. Page-specific Announcing styles are in `announcing.css`. Carousel and Announcing interactions are in `carousel.js` and `announcing.js`.

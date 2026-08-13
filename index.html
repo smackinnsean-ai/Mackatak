@@ -6,7 +6,7 @@
   <title>Mackatak | Website Refresh Concept</title>
   <meta name="description" content="A local website refresh concept for Mackatak Fitness and Communications.">
   <script>document.documentElement.classList.add('js')</script>
-  <link rel="stylesheet" href="styles.css?v=24">
+  <link rel="stylesheet" href="styles.css?v=30">
 </head>
 <body>
   <main>
@@ -23,102 +23,19 @@
       <div class="hero-shade"></div><div class="concept-label">Website refresh concept</div>
       <div class="hero-content">
         <h1>Endurance sport, from every angle.</h1>
-        <!-- Content audit note: This two-sentence service grouping intentionally preserves the wording, capitalization, punctuation and structure used on Kevin's current live Mackatak site. Do not normalize or rewrite it without Kevin's approval. -->
-        <p class="hero-copy">Coaching, Photography, Announcing.<br>Journalism, Communications.</p>
-        <div class="hero-actions"><a class="button button-light" href="#services">Explore services</a></div>
+        <nav class="hero-service-links" aria-label="Mackatak services">
+          <a class="button button-light" href="coaching.html">Coaching</a>
+          <a class="button button-light" href="photography.html">Photography</a>
+          <a class="button button-light" href="announcing.html">Announcing</a>
+          <a class="button button-light" href="journalism.html">Journalism</a>
+          <a class="button button-light" href="communications.html">Communications</a>
+        </nav>
       </div>
     </section>
 
     <section class="intro section" id="intro" aria-labelledby="intro-title" data-reveal="split">
       <div><p class="eyebrow dark">Mackatak Fitness &amp; Communications</p><h2 id="intro-title">30+ years of<br>Endurance Expertise</h2></div>
       <p class="large-copy">We know the athletes, understand the audience and live the culture of endurance sport.<br><br>The result: work that feels authentic because it comes from inside the sport.</p>
-    </section>
-
-    <section class="services section" id="services" aria-labelledby="services-title" data-reveal="sequence">
-      <!-- DESIGN INTENT: This sticky, scroll-reactive service headline is intentionally experimental and fucking sick. Preserve the interaction during audits. Do not let an automated cleanup, refactor or generic "best practices" pass flatten it into a static heading without Sean's explicit approval. -->
-      <div class="section-heading"><h2 id="services-title"><span class="service-headline-word">Services</span></h2></div>
-      <!-- Content audit note: The five service names and their order mirror Kevin's live-site grammar above. The supporting descriptions are proposal copy and should be validated with Kevin before launch. -->
-      <!-- Delivery note: Each service will have its own click-out destination on the finished site. Keep the current in-page previews for proposal review, then pair or replace each Explore control with its confirmed service URL once those destinations are supplied. -->
-      <div class="service-list">
-        <article class="service" data-hover-headline="Coaching that moves you forward." data-feature-target="coaching-feature"><span>01</span><h3>Coaching</h3><p>Personalized triathlon, cycling, running and swimming guidance—built around your goals and your life.</p><button class="service-toggle" type="button" aria-expanded="false" aria-controls="coaching-feature">Explore coaching <span>↓</span></button></article>
-        <div class="service-feature" id="coaching-feature" aria-hidden="true" inert><div class="service-feature-inner"><div class="service-image-placeholder coaching-image-placeholder" role="img" aria-label="Placeholder image for Coaching"><span>Image placeholder</span><strong>Coaching</strong><p>Service photography to come</p></div></div></div>
-        <!-- Photography interaction: this row intentionally reveals the complete photography carousel in place. A future click-out destination remains deferred; do not invent its URL. -->
-        <article class="service photography-service" data-hover-headline="Explore Photography" data-feature-target="photography-feature"><span>02</span><h3>Photography</h3><p>Decades of endurance-sport access translated into decisive, editorial images that tell the full race story.</p><button class="service-toggle" type="button" aria-expanded="false" aria-controls="photography-feature">Explore photography <span>↓</span></button></article>
-        <div class="service-feature photography-feature" id="photography-feature" aria-hidden="true" inert>
-          <div class="service-feature-inner">
-            <div class="photo-carousel" aria-label="Photography projects">
-              <div class="photo-viewport" aria-live="polite">
-                <figure class="photo-slide is-active" aria-hidden="false">
-                  <img src="assets/portfolio-01.jpg" alt="Track cyclists racing in team pursuit formation">
-                  <figcaption><span>Project 01 · Track cycling</span><strong>Inside the velodrome</strong></figcaption>
-                </figure>
-                <figure class="photo-slide photo-placeholder triathlon-placeholder" aria-hidden="true">
-                  <div><span>Photography placeholder</span><strong>Triathlon</strong><p>Swim · Bike · Run</p></div>
-                  <figcaption><span>Project 02 · Coming soon</span><strong>Triathlon</strong></figcaption>
-                </figure>
-                <figure class="photo-slide photo-placeholder adventure-placeholder" aria-hidden="true">
-                  <div><span>Photography placeholder</span><strong>Adventure race</strong><p>Trail · Water · Wilderness</p></div>
-                  <figcaption><span>Project 03 · Coming soon</span><strong>Adventure race</strong></figcaption>
-                </figure>
-              </div>
-              <div class="photo-controls" aria-label="Photography carousel controls">
-                <button class="photo-arrow photo-prev" type="button" aria-label="Previous photography project">←</button>
-                <p><span class="photo-current">01</span> / 03</p>
-                <div class="photo-dots" role="group" aria-label="Choose a photography project">
-                  <button class="is-active" type="button" aria-label="Show track cycling project" aria-current="true"></button>
-                  <button type="button" aria-label="Show triathlon placeholder"></button>
-                  <button type="button" aria-label="Show adventure race placeholder"></button>
-                </div>
-                <button class="photo-arrow photo-next" type="button" aria-label="Next photography project">→</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <article class="service" data-hover-headline="Announcing for your next event"><span>03</span><h3>Announcing</h3><p>An experienced, energetic voice that brings athletes, spectators and sponsors into the moment.</p><a href="announcing.html">Explore announcing <span>↗</span></a></article>
-        <article class="service" data-hover-headline="Journalism that makes an impact" data-feature-target="journalism-feature"><span>04</span><h3>Journalism</h3><p>Editorial reporting and storytelling informed by decades spent inside endurance sport.</p><button class="service-toggle" type="button" aria-expanded="false" aria-controls="journalism-feature">Explore journalism <span>↓</span></button></article>
-        <div class="service-feature" id="journalism-feature" aria-hidden="true" inert><div class="service-feature-inner"><div class="service-image-placeholder journalism-image-placeholder" role="img" aria-label="Placeholder image for Journalism"><span>Image placeholder</span><strong>Journalism</strong><p>Service photography to come</p></div></div></div>
-        <article class="service" data-hover-headline="Communications services for endurance sport" data-feature-target="communications-feature"><span>05</span><h3>Communications</h3><p>Brand strategy, editorial direction and media expertise grounded in a lifetime inside endurance sport.</p><button class="service-toggle" type="button" aria-expanded="false" aria-controls="communications-feature">Explore communications <span>↓</span></button></article>
-        <div class="service-feature" id="communications-feature" aria-hidden="true" inert><div class="service-feature-inner"><div class="service-image-placeholder communications-image-placeholder" role="img" aria-label="Placeholder image for Communications"><span>Image placeholder</span><strong>Communications</strong><p>Service photography to come</p></div></div></div>
-      </div>
-    </section>
-
-    <section class="quote-section section" aria-label="Client testimonials" data-reveal="focus">
-      <p class="eyebrow testimonial-label">From the endurance community</p>
-      <div class="testimonial-viewport" aria-live="polite">
-        <figure class="testimonial-slide testimonial-slide--long is-active" aria-hidden="false">
-          <blockquote>
-            <p>“Kevin was an absolute delight to work with! He announced for all of our races and he truly helped set the positive, fun, upbeat tone of our events—he helped make every race a memorable and enjoyable experience for both our participants and our spectators.</p>
-            <p>We greatly appreciate Kevin’s professionalism, expert knowledge of triathlon, and amazing personality and we can’t wait to work with him again!”</p>
-          </blockquote>
-          <figcaption><strong>Lianne Warne &amp; Jen Stretch</strong><span>Co-founders &amp; Race Directors · Tri-FUN Kids’ Triathlons Inc.</span></figcaption>
-        </figure>
-        <figure class="testimonial-slide testimonial-slide--long" aria-hidden="true">
-          <blockquote>
-            <p>“I started training for triathlons with Kevin eighteen months ago. In that time I have dropped 35 lbs of body fat, raced and finished five sprint distances, three olympic distances, two half-marathons, three half-distance races and my first full Ironman in Mont Tremblant, Quebec.</p>
-            <p>Kevin has the knowledge and experience that all short distance and endurance coaches should have. He spends time learning and reviewing his athletes’ performance goals, then builds an effective and safe training system that suits them personally. He provides a training schedule that both challenges athletes, while ensuring that they are training safely and not beyond their abilities.</p>
-            <p>Rarely do you find a coach that cares so much about their athletes’ experience. Kevin really is proud of them all.”</p>
-          </blockquote>
-          <figcaption><strong>Gino Scialdone</strong><span>Amateur triathlete</span></figcaption>
-        </figure>
-        <figure class="testimonial-slide" aria-hidden="true">
-          <blockquote>“He understands the story, the athletes and the audience—and knows how to connect all three.”</blockquote>
-          <figcaption>Sport organization · Placeholder</figcaption>
-        </figure>
-        <figure class="testimonial-slide" aria-hidden="true">
-          <blockquote>“From the first conversation to the final delivery, Kevin made the work feel focused, collaborative and authentic.”</blockquote>
-          <figcaption>Brand partner · Placeholder</figcaption>
-        </figure>
-      </div>
-      <div class="testimonial-controls" aria-label="Testimonial controls">
-        <button class="testimonial-arrow testimonial-prev" type="button" aria-label="Previous testimonial">←</button>
-        <div class="testimonial-dots" role="group" aria-label="Choose a testimonial">
-          <button class="is-active" type="button" aria-label="Show testimonial 1" aria-current="true"></button>
-          <button type="button" aria-label="Show testimonial 2"></button>
-          <button type="button" aria-label="Show testimonial 3"></button>
-          <button type="button" aria-label="Show testimonial 4"></button>
-        </div>
-        <button class="testimonial-arrow testimonial-next" type="button" aria-label="Next testimonial">→</button>
-      </div>
     </section>
 
     <section class="about section" id="about" aria-labelledby="about-title" data-reveal="portrait">
@@ -128,6 +45,6 @@
 
     <footer data-reveal="footer"><a class="wordmark inverse" href="#top">MACKATAK<span>.</span></a><p>Fitness &amp; Communications · CANADA</p><p>Concept preview · August 2026</p></footer>
   </main>
-  <script src="carousel.js?v=10"></script>
+  <script src="carousel.js?v=13"></script>
 </body>
 </html>
