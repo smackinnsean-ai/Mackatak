@@ -45,6 +45,7 @@ if (photoCarousel) {
       const active = slideIndex === currentPhoto;
       slide.classList.toggle('is-active', active);
       slide.setAttribute('aria-hidden', String(!active));
+      slide.toggleAttribute('inert', !active);
     });
 
     photoDots.forEach((dot, dotIndex) => {

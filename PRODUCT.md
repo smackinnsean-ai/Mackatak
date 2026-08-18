@@ -12,7 +12,7 @@ Mackatak serves a mixed group of prospective clients: athletes seeking coaching,
 
 ## Product Purpose
 
-The website introduces Mackatak Fitness and Communications, helps visitors identify the relevant service quickly, and gives each visitor a direct way to contact Kevin about that service.
+The website introduces Mackatak Fitness and Communications, helps visitors identify the relevant service quickly, and gives each visitor a direct way to connect with Mackatak about that service.
 
 ## Positioning
 
@@ -33,6 +33,8 @@ The website is a standalone static build. It must work when opened directly from
 ## Brand Commitments
 
 - Preserve the Mackatak name, endurance-sport focus, warm off-white and deep green surfaces, lime accent, serif display type, and direct editorial tone.
+- Sell Mackatak as a brand and team, not Kevin as an individual. Service and conversion copy must use “Mackatak,” “we,” or “our team.” Personal references to Kevin belong only in biography, attributed testimonials, or factual image descriptions.
+- Never ask visitors to contact Kevin directly. All contact actions represent a connection with Mackatak, even when the underlying email address belongs to Kevin.
 - Keep service names in this order: Coaching, Photography, Announcing, Journalism, Communications.
 - Keep all images local so the review build works offline.
 
@@ -40,6 +42,7 @@ The website is a standalone static build. It must work when opened directly from
 
 - `assets/hero-cyclists.jpg` supports the landing page.
 - `assets/portfolio-01.jpg` through `assets/portfolio-06.jpg` support the Photography page.
+- `https://kevinmackinnon.smugmug.com/` is the source of truth for the full Mackatak photography archive. The Photography page may feature selected public galleries while clearly linking to the live archive for browsing and search.
 - The Gino Scialdone testimonial supports Coaching.
 - The Lianne Warne and Jen Stretch testimonial supports Announcing.
 - No approved testimonials are available for Photography, Journalism, or Communications. Placeholder quotes must not be presented as client evidence.
