@@ -3,22 +3,57 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Coaching | Mackatak</title>
-  <meta name="description" content="Personalized triathlon, cycling, running and swimming coaching from Mackatak.">
-  <script>document.documentElement.classList.add('js')</script>
-  <link rel="stylesheet" href="styles.css?v=30">
-  <link rel="stylesheet" href="service-pages.css?v=6">
+  <title>Triathlon &amp; Endurance Coaching | Mackatak</title>
+  <meta name="description" content="Personalized triathlon, cycling, running and swimming coaching shaped around your goals, experience and life.">
+  <meta name="theme-color" content="#18221c">
+  <link rel="canonical" href="https://www.mackatak.net/coaching.html">
+  <link rel="icon" type="image/png" href="assets/favicon-64.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Mackatak">
+  <meta property="og:title" content="Triathlon &amp; Endurance Coaching | Mackatak">
+  <meta property="og:description" content="Personal coaching built around your goals and your life.">
+  <meta property="og:url" content="https://www.mackatak.net/coaching.html">
+  <meta property="og:image" content="https://www.mackatak.net/assets/service-coaching-2000.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Triathlon &amp; Endurance Coaching | Mackatak">
+  <meta name="twitter:description" content="Personal coaching built around your goals and your life.">
+  <meta name="twitter:image" content="https://www.mackatak.net/assets/service-coaching-2000.jpg">
+  <link rel="stylesheet" href="styles.css?v=31">
+  <link rel="stylesheet" href="service-pages.css?v=7">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://www.mackatak.net/#organization",
+        "name": "Mackatak Fitness & Communications",
+        "url": "https://www.mackatak.net/"
+      },
+      {
+        "@type": "Service",
+        "@id": "https://www.mackatak.net/coaching.html#service",
+        "name": "Triathlon and Endurance Coaching",
+        "serviceType": "Personalized triathlon, cycling, running and swimming coaching",
+        "provider": {"@id": "https://www.mackatak.net/#organization"},
+        "areaServed": {"@type": "Country", "name": "Canada"},
+        "url": "https://www.mackatak.net/coaching.html"
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
-  <main>
-    <header class="site-header">
-      <div class="brand-lockup"><a class="wordmark" href="index.html" aria-label="Mackatak home">MACKATAK<span>.</span></a><span class="brand-descriptor">Fitness and Communications</span></div>
-      <nav class="desktop-nav" aria-label="Primary navigation"><a class="nav-cta" href="mailto:kevin@mackatak.net?subject=Coaching%20inquiry">Connect</a></nav>
-      <a class="mobile-contact" href="mailto:kevin@mackatak.net?subject=Coaching%20inquiry">Connect</a>
-    </header>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="brand-lockup"><a class="wordmark" href="index.html" aria-label="Mackatak home">MACKATAK<span>.</span></a><span class="brand-descriptor">Fitness and Communications</span></div>
+    <nav class="desktop-nav" aria-label="Primary navigation"><a class="nav-cta" href="mailto:connect@mackatak.net?subject=Coaching%20inquiry" aria-label="Connect with Mackatak about coaching" data-track="connect" data-context="coaching-header">Connect</a></nav>
+    <a class="mobile-contact" href="mailto:connect@mackatak.net?subject=Coaching%20inquiry" aria-label="Connect with Mackatak about coaching" data-track="connect" data-context="coaching-mobile-header">Connect</a>
+  </header>
 
+  <main id="main-content" tabindex="-1">
     <section class="hero service-hero service-hero--coaching" id="top">
-      <img src="assets/service-coaching.jpg" alt="A Mackatak athlete racing at a triathlon">
+      <img src="assets/service-coaching-2000.jpg" srcset="assets/service-coaching-960.jpg 960w, assets/service-coaching-2000.jpg 2000w" sizes="100vw" width="2000" height="1328" fetchpriority="high" decoding="async" alt="A Mackatak athlete racing at a triathlon">
       <div class="hero-shade"></div><div class="concept-label">Coaching</div>
       <div class="hero-content">
         <h1>Coaching that moves you forward.</h1>
@@ -33,22 +68,37 @@
       </div>
     </section>
 
-    <figure class="service-testimonial section" data-reveal="focus">
-      <blockquote>
-        <p>“I started training for triathlons with Kevin eighteen months ago. In that time I have dropped 35 lbs of body fat, raced and finished five sprint distances, three olympic distances, two half-marathons, three half-distance races and my first full Ironman in Mont Tremblant, Quebec.</p>
-        <p>Kevin has the knowledge and experience that all short distance and endurance coaches should have. He spends time learning and reviewing his athletes’ performance goals, then builds an effective and safe training system that suits them personally. He provides a training schedule that both challenges athletes, while ensuring that they are training safely and not beyond their abilities.</p>
-        <p>Rarely do you find a coach that cares so much about their athletes’ experience. Kevin really is proud of them all.”</p>
-      </blockquote>
+    <section class="service-overview section" aria-labelledby="coaching-overview-title">
+      <div class="section-heading"><p class="eyebrow dark">Personal by design</p><h2 id="coaching-overview-title">A plan that fits the athlete.</h2><p>Good coaching connects ambition with the training you can actually absorb. Mackatak starts with your experience, schedule and goals, then builds the work from there.</p></div>
+      <div class="service-points">
+        <article><p class="service-point-number">01</p><h3>Understand</h3><p>Your goals, history and real-life constraints set the direction.</p></article>
+        <article><p class="service-point-number">02</p><h3>Build</h3><p>Training is progressive, specific and challenging without losing sight of recovery.</p></article>
+        <article><p class="service-point-number">03</p><h3>Adjust</h3><p>Feedback and performance guide the next block—not a fixed template.</p></article>
+      </div>
+    </section>
+
+    <figure class="service-testimonial section">
+      <blockquote><p>“Kevin spends time learning and reviewing his athletes’ performance goals, then builds an effective and safe training system that suits them personally. Rarely do you find a coach that cares so much about their athletes’ experience.”</p></blockquote>
       <figcaption><strong>Gino Scialdone</strong><span>Amateur triathlete</span></figcaption>
     </figure>
 
-    <section class="service-contact section" data-reveal="split">
-      <h2>Talk about your next goal.</h2>
-      <p>Tell us what you’re training for and where you want to go next.</p>
-      <a class="button button-light button-primary" href="mailto:kevin@mackatak.net?subject=Coaching%20inquiry"><span>Connect</span><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <section class="service-faq section" aria-labelledby="coaching-faq-title">
+      <div class="section-heading compact"><p class="eyebrow dark">Common questions</p><h2 id="coaching-faq-title">Before we begin.</h2></div>
+      <div class="faq-list">
+        <details><summary>Who is Mackatak coaching for?</summary><p>Athletes preparing for a first event, returning to sport or chasing a more ambitious endurance goal.</p></details>
+        <details><summary>Which disciplines are supported?</summary><p>Triathlon, cycling, running and swimming, with the mix shaped around the athlete and the event.</p></details>
+        <details><summary>What happens after I connect?</summary><p>Tell us what you are training for, your experience and your availability. Mackatak will confirm fit and the best next step.</p></details>
+      </div>
     </section>
-    <footer data-reveal="footer"><a class="wordmark inverse" href="index.html">MACKATAK<span>.</span></a><p>Fitness &amp; Communications · CANADA</p><p>Mackatak coaching</p></footer>
+
+    <section class="service-contact section">
+      <p class="eyebrow">Start the conversation</p><h2>Talk about your next goal.</h2>
+      <p>Tell us what you’re training for and where you want to go next.</p>
+      <a class="button button-light button-primary" href="mailto:connect@mackatak.net?subject=Coaching%20inquiry" aria-label="Connect with Mackatak about coaching" data-track="connect" data-context="coaching-final"><span>Connect</span><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </section>
   </main>
-  <script src="carousel.js?v=14"></script>
+
+  <footer><a class="wordmark inverse" href="index.html" aria-label="Mackatak home">MACKATAK<span>.</span></a><p>Fitness &amp; Communications · Canada</p><a class="footer-connect" href="mailto:connect@mackatak.net?subject=Coaching%20inquiry" aria-label="Connect with Mackatak about coaching" data-track="connect" data-context="coaching-footer">Connect</a></footer>
+  <script src="carousel.js?v=15"></script>
 </body>
 </html>

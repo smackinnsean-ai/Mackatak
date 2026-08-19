@@ -8,6 +8,7 @@
 .carousel-controls { display: flex; justify-content: flex-end; gap: .6rem; margin-bottom: 1.25rem; }
 .carousel-controls button { width: 48px; height: 48px; border: 1px solid var(--ink); border-radius: 50%; background: transparent; color: var(--ink); font-size: 1.2rem; cursor: pointer; }
 .carousel-controls button:hover { background: var(--ink); color: white; }
+.carousel-instruction { margin: -3.65rem 8rem 1.8rem 0; color: #5e6961; font-size: .82rem; line-height: 1.5; }
 .events-track { display: flex; gap: 1rem; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; padding-bottom: .5rem; }
 .events-track:focus-visible { outline: 3px solid #627600; outline-offset: 4px; }
 .events-track::-webkit-scrollbar { display: none; }
@@ -24,7 +25,8 @@
   .events-track article { flex-basis: min(74vw,520px); }
 }
 @media (max-width:520px) {
-  .carousel-controls { display: none; }
+  .carousel-controls { justify-content: flex-start; margin-bottom: .75rem; }
+  .carousel-instruction { margin: 0 0 1.25rem; }
   .events-track { margin-right: -5vw; padding-right: 5vw; }
   .events-track article { flex-basis: 84vw; min-height: 340px; }
 }

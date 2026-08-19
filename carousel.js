@@ -1,7 +1,4 @@
-requestAnimationFrame(() => document.body.classList.add('is-ready'));
-
-const revealSections = [...document.querySelectorAll('[data-reveal]')];
-const reducedPageMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+document.documentElement.classList.add('js');
 
 const serviceLinks = document.querySelector('.hero-service-links');
 const currentService = serviceLinks?.querySelector('[aria-current="page"]');
@@ -11,20 +8,6 @@ if (serviceLinks && currentService) {
     const centeredPosition = currentService.offsetLeft - ((serviceLinks.clientWidth - currentService.offsetWidth) / 2);
     serviceLinks.scrollLeft = Math.max(0, centeredPosition);
   });
-}
-
-if (reducedPageMotion || !('IntersectionObserver' in window)) {
-  revealSections.forEach((section) => section.classList.add('is-visible'));
-} else {
-  const revealObserver = new IntersectionObserver((entries, observer) => {
-    entries.forEach((entry) => {
-      if (!entry.isIntersecting) return;
-      entry.target.classList.add('is-visible');
-      observer.unobserve(entry.target);
-    });
-  }, { threshold: 0.14, rootMargin: '0px 0px -8% 0px' });
-
-  revealSections.forEach((section) => revealObserver.observe(section));
 }
 
 const photoCarousel = document.querySelector('.photo-carousel');
@@ -63,3 +46,23 @@ if (photoCarousel) {
     showPhoto(0);
   }
 }
+
+document.addEventListener('click', (event) => {
+  const link = event.target.closest('[data-track]');
+  if (!link) return;
+
+  const detail = {
+    action: link.dataset.track,
+    context: link.dataset.context || 'unspecified',
+    path: window.location.pathname
+  };
+
+  document.dispatchEvent(new CustomEvent('mackatak:conversion', { detail }));
+
+  if (typeof window.gtag === 'function') {
+    window.gtag('event', detail.action, {
+      link_context: detail.context,
+      page_path: detail.path
+    });
+  }
+});

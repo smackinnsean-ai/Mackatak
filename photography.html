@@ -3,25 +3,60 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Photography | Mackatak</title>
-  <meta name="description" content="Endurance-sport photography from Mackatak.">
-  <script>document.documentElement.classList.add('js')</script>
-  <link rel="stylesheet" href="styles.css?v=30">
-  <link rel="stylesheet" href="service-pages.css?v=6">
+  <title>Endurance Sports Photography | Mackatak</title>
+  <meta name="description" content="Editorial endurance-sport photography, race coverage and event galleries from Mackatak.">
+  <meta name="theme-color" content="#18221c">
+  <link rel="canonical" href="https://www.mackatak.net/photography.html">
+  <link rel="icon" type="image/png" href="assets/favicon-64.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Mackatak">
+  <meta property="og:title" content="Endurance Sports Photography | Mackatak">
+  <meta property="og:description" content="Editorial race coverage shaped by decades inside endurance sport.">
+  <meta property="og:url" content="https://www.mackatak.net/photography.html">
+  <meta property="og:image" content="https://www.mackatak.net/assets/archive-home-feature-1800.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Endurance Sports Photography | Mackatak">
+  <meta name="twitter:description" content="Editorial race coverage shaped by decades inside endurance sport.">
+  <meta name="twitter:image" content="https://www.mackatak.net/assets/archive-home-feature-1800.jpg">
+  <link rel="stylesheet" href="styles.css?v=31">
+  <link rel="stylesheet" href="service-pages.css?v=7">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://www.mackatak.net/#organization",
+        "name": "Mackatak Fitness & Communications",
+        "url": "https://www.mackatak.net/"
+      },
+      {
+        "@type": "Service",
+        "@id": "https://www.mackatak.net/photography.html#service",
+        "name": "Endurance Sports Photography",
+        "serviceType": "Editorial endurance-sport photography and race coverage",
+        "provider": {"@id": "https://www.mackatak.net/#organization"},
+        "areaServed": {"@type": "Country", "name": "Canada"},
+        "url": "https://www.mackatak.net/photography.html"
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
-  <main>
-    <header class="site-header">
-      <div class="brand-lockup"><a class="wordmark" href="index.html" aria-label="Mackatak home">MACKATAK<span>.</span></a><span class="brand-descriptor">Fitness and Communications</span></div>
-      <nav class="desktop-nav" aria-label="Primary navigation"><a class="nav-cta" href="mailto:kevin@mackatak.net?subject=Photography%20inquiry">Connect</a></nav>
-      <a class="mobile-contact" href="mailto:kevin@mackatak.net?subject=Photography%20inquiry">Connect</a>
-    </header>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="brand-lockup"><a class="wordmark" href="index.html" aria-label="Mackatak home">MACKATAK<span>.</span></a><span class="brand-descriptor">Fitness and Communications</span></div>
+    <nav class="desktop-nav" aria-label="Primary navigation"><a class="nav-cta" href="mailto:connect@mackatak.net?subject=Photography%20inquiry" aria-label="Connect with Mackatak about photography" data-track="connect" data-context="photography-header">Connect</a></nav>
+    <a class="mobile-contact" href="mailto:connect@mackatak.net?subject=Photography%20inquiry" aria-label="Connect with Mackatak about photography" data-track="connect" data-context="photography-mobile-header">Connect</a>
+  </header>
 
+  <main id="main-content" tabindex="-1">
     <section class="hero service-hero service-hero--photography" id="top">
-      <img src="assets/service-photography.jpg" alt="Canadian track cyclists racing in team pursuit formation">
+      <img src="assets/hero-cyclists-2000.jpg" srcset="assets/hero-cyclists-960.jpg 960w, assets/hero-cyclists-2000.jpg 2000w" sizes="100vw" width="2000" height="1189" fetchpriority="high" decoding="async" alt="Endurance cyclists climbing beneath dramatic skies">
       <div class="hero-shade"></div><div class="concept-label">Photography</div>
       <div class="hero-content">
-        <h1>Photography</h1>
+        <h1>Photography with race-day instincts.</h1>
         <p class="hero-copy">Decades of endurance-sport access translated into decisive, editorial images that tell the full race story.</p>
         <nav class="hero-service-links" aria-label="Mackatak services">
           <a class="button button-light" href="coaching.html">Coaching</a>
@@ -33,18 +68,23 @@
       </div>
     </section>
 
-    <section class="photography-gallery section" aria-labelledby="portfolio-title" data-reveal="focus">
-      <a class="portfolio-archive-cta" href="https://kevinmackinnon.smugmug.com/browse/" target="_blank" rel="noopener noreferrer">
-        <img src="assets/archive-home-feature.jpg" alt="Two athletes celebrating on the track at the 2022 Commonwealth Games">
+    <section class="gallery-intro section" aria-labelledby="photography-intro-title">
+      <div><p class="eyebrow dark">Coverage with context</p><h2 id="photography-intro-title">Know where the moment will happen.</h2></div>
+      <p class="large-copy">The best race photographs come from understanding the sport—the pressure before the start, the move that changes the day and the emotion after the line.</p>
+    </section>
+
+    <section class="photography-gallery section" aria-labelledby="portfolio-title">
+      <a class="portfolio-archive-cta" href="https://kevinmackinnon.smugmug.com/browse/" target="_blank" rel="noopener" aria-label="Browse the complete Mackatak photography archive on SmugMug" data-track="archive" data-context="complete-archive">
+        <img src="assets/archive-home-feature-1800.jpg" srcset="assets/archive-home-feature-720.jpg 720w, assets/archive-home-feature-1800.jpg 1800w" sizes="(max-width: 860px) 90vw, (max-width: 1283px) 92vw, 1180px" width="1800" height="1200" loading="lazy" decoding="async" alt="Two athletes celebrating on the track at the 2022 Commonwealth Games">
         <span class="portfolio-archive-copy"><strong>Complete archive</strong><span>Browse all photography <span aria-hidden="true">↗</span></span></span>
       </a>
-      <div class="gallery-heading"><h2 id="portfolio-title">Featured event galleries</h2></div>
+      <div class="gallery-heading"><p class="eyebrow dark">Selected work</p><h2 id="portfolio-title">Featured event galleries</h2></div>
       <div class="photo-carousel" aria-label="Featured Mackatak event galleries">
         <div class="photo-viewport" aria-live="polite">
-          <figure class="photo-slide is-active"><a class="photo-slide-link" href="https://kevinmackinnon.smugmug.com/Robbie-Burns-Day-Run-2026" target="_blank" rel="noopener noreferrer"><img src="assets/archive-robbie-burns-2026.jpg" alt="Runners crossing the start line at the Robbie Burns Day Run 2026"><figcaption><span class="photo-caption-title"><small>Event gallery</small><strong>Robbie Burns Day Run 2026</strong></span><span class="photo-caption-action">View gallery ↗</span></figcaption></a></figure>
-          <figure class="photo-slide"><a class="photo-slide-link" href="https://kevinmackinnon.smugmug.com/Ironman-703-Busselton-Race-Day" target="_blank" rel="noopener noreferrer"><img src="assets/archive-ironman-busselton.jpg" alt="Cyclists racing at Ironman 70.3 Busselton"><figcaption><span class="photo-caption-title"><small>Event gallery</small><strong>Ironman 70.3 Busselton</strong></span><span class="photo-caption-action">View gallery ↗</span></figcaption></a></figure>
-          <figure class="photo-slide"><a class="photo-slide-link" href="https://kevinmackinnon.smugmug.com/Womens-100-x-1-Mile-Relay" target="_blank" rel="noopener noreferrer"><img src="assets/archive-womens-relay.jpg" alt="Athletes at the Women’s 100 x 1 Mile Relay"><figcaption><span class="photo-caption-title"><small>Event gallery</small><strong>Women’s 100 × 1 Mile Relay</strong></span><span class="photo-caption-action">View gallery ↗</span></figcaption></a></figure>
-          <figure class="photo-slide"><a class="photo-slide-link" href="https://kevinmackinnon.smugmug.com/Robbie-Burns-Day-Run-2024" target="_blank" rel="noopener noreferrer"><img src="assets/archive-robbie-burns-2024.jpg" alt="Runners racing at the Robbie Burns Day Run 2024"><figcaption><span class="photo-caption-title"><small>Event gallery</small><strong>Robbie Burns Day Run 2024</strong></span><span class="photo-caption-action">View gallery ↗</span></figcaption></a></figure>
+          <figure class="photo-slide is-active"><a class="photo-slide-link" href="https://kevinmackinnon.smugmug.com/Robbie-Burns-Day-Run-2026" target="_blank" rel="noopener" data-track="gallery" data-context="robbie-burns-2026"><img src="assets/archive-robbie-burns-2026-800.jpg" width="800" height="533" loading="lazy" decoding="async" alt="Runners crossing the start line at the Robbie Burns Day Run 2026"><figcaption><span class="photo-caption-title"><small>Event gallery</small><strong>Robbie Burns Day Run 2026</strong></span><span class="photo-caption-action">View gallery ↗</span></figcaption></a></figure>
+          <figure class="photo-slide"><a class="photo-slide-link" href="https://kevinmackinnon.smugmug.com/Ironman-703-Busselton-Race-Day" target="_blank" rel="noopener" data-track="gallery" data-context="ironman-busselton"><img src="assets/archive-ironman-busselton-799.jpg" width="799" height="533" loading="lazy" decoding="async" fetchpriority="low" alt="Cyclists racing at Ironman 70.3 Busselton"><figcaption><span class="photo-caption-title"><small>Event gallery</small><strong>Ironman 70.3 Busselton</strong></span><span class="photo-caption-action">View gallery ↗</span></figcaption></a></figure>
+          <figure class="photo-slide"><a class="photo-slide-link" href="https://kevinmackinnon.smugmug.com/Womens-100-x-1-Mile-Relay" target="_blank" rel="noopener" data-track="gallery" data-context="womens-relay"><img src="assets/archive-womens-relay-799.jpg" width="799" height="533" loading="lazy" decoding="async" fetchpriority="low" alt="Athletes at the Women’s 100 x 1 Mile Relay"><figcaption><span class="photo-caption-title"><small>Event gallery</small><strong>Women’s 100 × 1 Mile Relay</strong></span><span class="photo-caption-action">View gallery ↗</span></figcaption></a></figure>
+          <figure class="photo-slide"><a class="photo-slide-link" href="https://kevinmackinnon.smugmug.com/Robbie-Burns-Day-Run-2024" target="_blank" rel="noopener" data-track="gallery" data-context="robbie-burns-2024"><img src="assets/archive-robbie-burns-2024-799.jpg" width="799" height="534" loading="lazy" decoding="async" fetchpriority="low" alt="Runners racing at the Robbie Burns Day Run 2024"><figcaption><span class="photo-caption-title"><small>Event gallery</small><strong>Robbie Burns Day Run 2024</strong></span><span class="photo-caption-action">View gallery ↗</span></figcaption></a></figure>
         </div>
         <div class="photo-controls" aria-label="Photography carousel controls">
           <button class="photo-arrow photo-prev" type="button" aria-label="Previous event gallery">←</button>
@@ -60,13 +100,14 @@
       </div>
     </section>
 
-    <section class="service-contact section" data-reveal="split">
-      <h2>Bring the race into focus.</h2>
-      <p>Tell us about the race, story or campaign you need to capture.</p>
-      <a class="button button-light button-primary" href="mailto:kevin@mackatak.net?subject=Photography%20inquiry"><span>Connect</span><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <section class="service-contact section">
+      <p class="eyebrow">Assignments &amp; coverage</p><h2>Bring the race into focus.</h2>
+      <p>Tell us about the event, story or campaign you need to capture.</p>
+      <a class="button button-light button-primary" href="mailto:connect@mackatak.net?subject=Photography%20inquiry" aria-label="Connect with Mackatak about photography" data-track="connect" data-context="photography-final"><span>Connect</span><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
     </section>
-    <footer data-reveal="footer"><a class="wordmark inverse" href="index.html">MACKATAK<span>.</span></a><p>Fitness &amp; Communications · CANADA</p><p>Mackatak photography</p></footer>
   </main>
-  <script src="carousel.js?v=14"></script>
+
+  <footer><a class="wordmark inverse" href="index.html" aria-label="Mackatak home">MACKATAK<span>.</span></a><p>Fitness &amp; Communications · Canada</p><a class="footer-connect" href="mailto:connect@mackatak.net?subject=Photography%20inquiry" aria-label="Connect with Mackatak about photography" data-track="connect" data-context="photography-footer">Connect</a></footer>
+  <script src="carousel.js?v=15"></script>
 </body>
 </html>

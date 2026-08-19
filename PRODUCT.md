@@ -25,7 +25,7 @@ The website is a standalone static build. It must work when opened directly from
 ## Capabilities and Constraints
 
 - The landing page is a concise gateway to five services: Coaching, Photography, Announcing, Journalism, and Communications.
-- Each service has a dedicated static HTML page and a direct email contact action.
+- Each service has a dedicated static HTML page and a brand-level `connect@mackatak.net` email action that must be provisioned before launch.
 - The existing visual identity and first-party imagery from mackatak.net are the design authority.
 - Service copy must come from approved repository content. Do not invent claims, clients, project details, or testimonials.
 - The site must remain responsive, keyboard accessible, and usable without JavaScript for navigation.
@@ -34,14 +34,14 @@ The website is a standalone static build. It must work when opened directly from
 
 - Preserve the Mackatak name, endurance-sport focus, warm off-white and deep green surfaces, lime accent, serif display type, and direct editorial tone.
 - Sell Mackatak as a brand and team, not Kevin as an individual. Service and conversion copy must use “Mackatak,” “we,” or “our team.” Personal references to Kevin belong only in biography, attributed testimonials, or factual image descriptions.
-- Never ask visitors to contact Kevin directly. All contact actions represent a connection with Mackatak, even when the underlying email address belongs to Kevin.
+- Never ask visitors to contact Kevin directly. All contact actions represent a connection with Mackatak.
 - Keep service names in this order: Coaching, Photography, Announcing, Journalism, Communications.
 - Keep all images local so the review build works offline.
 
 ## Evidence on Hand
 
-- `assets/hero-cyclists.jpg` supports the landing page.
-- `assets/portfolio-01.jpg` through `assets/portfolio-06.jpg` support the Photography page.
+- Responsive `assets/hero-cyclists-*.jpg` files support the landing page and Photography hero.
+- Responsive `assets/archive-home-feature-*.jpg` files and the four optimized `assets/archive-*-799/800.jpg` files support the Photography archive and featured galleries.
 - `https://kevinmackinnon.smugmug.com/` is the source of truth for the full Mackatak photography archive. The Photography page may feature selected public galleries while clearly linking to the live archive for browsing and search.
 - The Gino Scialdone testimonial supports Coaching.
 - The Lianne Warne and Jen Stretch testimonial supports Announcing.

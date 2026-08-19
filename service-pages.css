@@ -4,6 +4,24 @@
 .service-hero--journalism > img { object-position: center 38%; }
 .service-hero--communications > img { object-position: center 42%; }
 
+.service-overview, .gallery-intro, .service-faq { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 8vw; align-items: start; }
+.section-heading { max-width: 720px; }
+.section-heading > p:last-child { margin: 2rem 0 0; font-size: 1.12rem; line-height: 1.7; }
+.section-heading.compact h2 { max-width: 620px; }
+.service-points { border-top: 1px solid var(--line); }
+.service-points article { display: grid; grid-template-columns: 3rem 1fr; gap: .25rem 1rem; padding: 1.4rem 0; border-bottom: 1px solid var(--line); }
+.service-points h3 { margin: 0; font-family: Georgia, 'Times New Roman', serif; font-size: 1.65rem; font-weight: 400; }
+.service-points p { grid-column: 2; margin: 0; line-height: 1.6; color: #4e5a52; }
+.service-points .service-point-number { grid-column: 1; grid-row: 1 / span 2; color: #64705f; font-size: .7rem; font-weight: 800; letter-spacing: .1em; }
+.gallery-intro { border-bottom: 1px solid var(--line); }
+.faq-list, .intro > div:last-child:has(details) { border-top: 1px solid var(--line); }
+.faq-list details, .intro details { border-bottom: 1px solid var(--line); }
+.faq-list summary, .intro summary { position: relative; padding: 1.4rem 2.5rem 1.4rem 0; cursor: pointer; font-family: Georgia, 'Times New Roman', serif; font-size: 1.35rem; line-height: 1.25; list-style: none; }
+.faq-list summary::-webkit-details-marker, .intro summary::-webkit-details-marker { display: none; }
+.faq-list summary::after, .intro summary::after { content: '+'; position: absolute; top: 1.25rem; right: .15rem; font-family: Arial, Helvetica, sans-serif; font-size: 1.4rem; }
+.faq-list details[open] summary::after, .intro details[open] summary::after { content: '−'; }
+.faq-list details p, .intro details p { max-width: 650px; margin: -.25rem 2.5rem 1.5rem 0; line-height: 1.65; color: #4e5a52; }
+
 .service-testimonial { margin: 1rem 4vw; border-radius: 14px; background: var(--ink); color: white; overflow: hidden; }
 .service-testimonial blockquote { max-width: 1040px; margin: 0 auto; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(1.2rem, 2vw, 1.8rem); line-height: 1.45; letter-spacing: -.02em; }
 .service-testimonial blockquote p { margin: 0 0 .9em; }
@@ -62,6 +80,7 @@
   .service-hero--journalism > img { object-position: 48% center; }
   .service-hero--communications > img { object-position: 46% center; }
   .portfolio-archive-cta > img { aspect-ratio: 4 / 3; }
+  .service-overview, .gallery-intro, .service-faq { grid-template-columns: 1fr; gap: 3rem; }
 }
 
 @media (max-width: 520px) {

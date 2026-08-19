@@ -11,3 +11,8 @@ function moveEvents(direction) {
 
 previous?.addEventListener('click', () => moveEvents(-1));
 next?.addEventListener('click', () => moveEvents(1));
+track?.addEventListener('keydown', (event) => {
+  if (event.key !== 'ArrowLeft' && event.key !== 'ArrowRight') return;
+  event.preventDefault();
+  moveEvents(event.key === 'ArrowLeft' ? -1 : 1);
+});
