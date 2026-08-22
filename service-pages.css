@@ -1,0 +1,63 @@
+.service-hero > img { filter: saturate(.86) contrast(1.04); }
+.service-hero--photography > img { object-position: center 44%; }
+.service-hero--announcing > img { object-position: 33% center; }
+.service-hero--journalism > img { object-position: center 38%; }
+.service-hero--communications > img { object-position: center 42%; }
+
+.service-testimonial { margin: 1rem 4vw; border-radius: 14px; background: var(--ink); color: white; overflow: hidden; }
+.service-testimonial blockquote { max-width: 1040px; margin: 0 auto; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(1.2rem, 2vw, 1.8rem); line-height: 1.45; letter-spacing: -.02em; }
+.service-testimonial blockquote p { margin: 0 0 .9em; }
+.service-testimonial blockquote p:last-child { margin-bottom: 0; }
+.service-testimonial figcaption { max-width: 1040px; margin: 2.5rem auto 0; display: flex; flex-direction: column; gap: .35rem; color: var(--lime); font-size: .8rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+.service-testimonial figcaption strong { color: white; }
+
+.service-contact { background: #1f422f; color: white; }
+.service-contact h2 { max-width: 980px; }
+.service-contact p { max-width: 680px; margin: 2rem 0; font-size: 1.15rem; line-height: 1.65; }
+
+.photography-gallery { background: #e8e5dc; }
+.gallery-heading { max-width: 900px; margin: 0 auto 3rem; }
+.gallery-heading h2 { max-width: 760px; }
+.photo-carousel { max-width: 900px; margin: 0 auto; }
+.photo-viewport { display: grid; gap: 1rem; }
+.photo-slide { position: relative; margin: 0; overflow: hidden; background: #d9d6ce; }
+.photo-slide img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; }
+.photo-slide figcaption { display: flex; justify-content: space-between; gap: 2rem; padding: 1rem 0 0; font-size: .75rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+.photo-controls { display: none; }
+
+.js .photo-viewport { display: grid; gap: 0; aspect-ratio: 3 / 2; overflow: hidden; }
+.js .photo-slide { grid-area: 1 / 1; opacity: 0; transform: translateX(4%); pointer-events: none; transition: opacity .55s ease, transform .55s ease; }
+.js .photo-slide.is-active { opacity: 1; transform: translateX(0); pointer-events: auto; }
+.js .photo-slide img { height: 100%; }
+.js .photo-slide figcaption { position: absolute; inset: auto 0 0; align-items: end; padding: 5rem 1.5rem 1.5rem; color: white; background: linear-gradient(0deg, rgba(10,17,13,.82), transparent); }
+.js .photo-slide figcaption strong { font-family: Georgia, 'Times New Roman', serif; font-size: 2rem; font-weight: 400; letter-spacing: -.02em; }
+.js .photo-controls { display: flex; align-items: center; justify-content: flex-end; gap: .85rem; margin-top: 1rem; }
+.photo-controls > p { margin: 0 .4rem 0 0; min-width: 58px; font-size: .75rem; font-weight: 800; letter-spacing: .1em; }
+.photo-arrow { width: 44px; height: 44px; border: 1px solid var(--line); border-radius: 50%; background: transparent; color: var(--ink); font-size: 1.15rem; cursor: pointer; transition: background .2s ease, border-color .2s ease; }
+.photo-arrow:hover { background: var(--lime); border-color: var(--lime); }
+.photo-dots { display: flex; align-items: center; margin: 0 .2rem; }
+.photo-dots button { position: relative; width: 32px; height: 44px; padding: 0; border: 0; background: transparent; cursor: pointer; }
+.photo-dots button::after { content: ''; position: absolute; top: 50%; left: 50%; width: 9px; height: 9px; border-radius: 50%; background: rgba(24,34,28,.28); transform: translate(-50%, -50%); }
+.photo-dots button.is-active::after { width: 24px; border-radius: 8px; background: var(--ink); }
+
+@media (max-width: 860px) {
+  .service-hero--photography > img { object-position: center; }
+  .service-hero--announcing > img { object-position: 33% center; }
+  .service-hero--journalism > img { object-position: 48% center; }
+  .service-hero--communications > img { object-position: 46% center; }
+}
+
+@media (max-width: 520px) {
+  .service-testimonial { margin-inline: 5vw; }
+  .service-testimonial blockquote { font-size: 1.05rem; }
+  .service-testimonial figcaption { line-height: 1.5; }
+  .gallery-heading { margin-bottom: 2rem; }
+  .js .photo-slide figcaption { padding: 4rem 1rem 1rem; }
+  .js .photo-slide figcaption strong { font-size: 1.4rem; }
+  .js .photo-controls { justify-content: center; gap: .6rem; }
+  .photo-dots { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .js .photo-slide { transition: none; }
+}
